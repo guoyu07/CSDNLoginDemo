@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSDN博客登陆</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		a{
+			text-decoration:none;
+		}
+		li{
+			display: inline-block;
+		}
+		#main{
+			width: 100%;
+			height: auto;
+			background: #00AAEF;
+		}
+		.container{
+			width: 100%;
+			height: auto;
+			padding:60px 0px 90px 0px; 
+		}
+		#left_side{
+			width: 60%;
+			height: auto;
+			display: inline-block;
+			padding: 0px;
+			
+		}
+		#left_side img{
+			max-width: 57%;
+			height: auto;
+			padding-left: 31%;
+		}
+		#right_side{
+			width: 40%;
+			height: auto;
+			float: right;
+			display: inline-block;
+			padding: 0px;
+
+		}
+		#form,#login_way,#line{
+			width: 65%;
+			height: auto;
+			margin-right:35%;
+			background: #fff;
+			overflow: hidden;
+		}
+		form{
+			width: 100%;
+			height: auto;
+		}
+		h3,h4{
+			font-weight: normal;
+			font-size: 16px;
+			color: #747474;
+			text-align: left;
+			margin:10%;
+		}
+		#userNumber,#password,#tips,#button,#tools,#sign_in{
+			width: 80%;
+			height: auto;
+			margin: 5% 10%;
+			border: 2px solid #E1E1E1;
+		}
+		#userNumber input,#password input{
+			width: 70%;
+			height: 40px;
+			display: inline-block;
+			border: none;
+
+		}
+		#user_icon,#key_icon{
+			width: 20%;
+			height: 15px;
+			display: inline-block;
+			z-index: 100;
+		}
+		#user_icon{
+			background: url(images/login-locked-icon.png) no-repeat center;
+		}
+		#key_icon{
+			background: url(images/login-key-icon.png) no-repeat center;
+		}
+		#tips,#button,#tools,#sign_in{
+			border: none;
+		}
+		
+		#button input{
+			width: 100%;
+			height: 40px;
+			background: #DC3C00;
+			border:none;
+		}
+		#weibo,#baidu,#QQ,#google,#github,#link{
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			overflow: hidden;
+			background: url(images/login-third-party.png) no-repeat;
+		}
+		#weibo{	
+			background-position: 8px 0px;
+		}
+		#link{
+			background-position: -34px 0px;
+		}
+		#baidu{
+			background-position: -72px 0px;
+		}
+		#QQ{
+			background-position: -109px 0px;
+		}
+		#google{
+			background-position: -146px 0px;
+		}
+		#github{
+			background-position: -184px 0px;
+		}
+		#foot{
+			width: 100%;
+			height: auto;
+		}
+		#introduce ul,#copyright ul{
+			width:80%;
+			height: auto;
+			padding-top: 20px;
+			display: inline-block;
+			text-align: center;
+		}
+		#introduce ul li a,#copyright ul li a{
+			color: #666666;
+			font-weight:small;
+			display: inline-block;
+			font-size: 14px;
+		}
+		#introduce ul li a span{
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+		}
+		#kefu{
+			background: url(images/qq_icon.png);
+			background-position: 0px 0px;
+		}
+
+	</style>
+</head>
+<body>
+	<!-- main这个容器是登陆页面的主要的内容 -->
+	<div id="main">
+		<div class="container">
+			<div id="left_side">
+				<img src="images/s1.png" alt="mobile-app-download" />
+			</div>
+			<div id="right_side">
+				<div id="form">
+					<h3>账号登录</h3>
+					<form action="" method="post">
+						<div id="userNumber">
+							<div id="user_icon"></div>
+							<input type="text" placeholder="输入用户名/邮箱/手机号">
+						</div>
+						<div id="password">
+							<div id="key_icon"></div>
+							<input type="password" placeholder="输入密码">
+						</div>
+						<div id="tips">
+							<input type="checkbox" checked="check" />
+							<span style="color: #999999;font-size: 14px;">自动登录</span>
+							<a href="http://www.baidu.com" style="color: #999999;font-size: 14px;float: right;">忘记密码</a>
+						</div>
+					</form>
+					<div id="button"><input type="submit"  style="color: #000;" value="登录"></input></div>
+				</div>
+				<div id="line" style="border-bottom: 1px solid #EEE;"></div>
+				<div id="login_way">
+					<h4 style="font-size: 14px;">第三方账号登录</h4>
+					<div id="tools">
+						<a href="" id="weibo"></a>
+						<a href="" id="link"></a>
+						<a href="" id="baidu"></a>
+						<a href="" id="QQ"></a>
+						<a href="" id="google"></a>
+						<a href="" id="github"></a>
+					</div>
+					<div id="sign_in">
+							<span style="color: #999999;font-size: 14px;">还没有CSDN账号</span>
+							<a href="http://www.baidu.com" style="color: #999999;font-size: 14px;float: right;">注册</a>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- 这个内容主要是页脚内容 -->
+	<div id="foot">
+		<div id="introduce">
+			<ul>
+				<li><a href="">公司简介</a></li>|
+				<li><a href="">招贤纳士</a></li>|
+				<li><a href="">广告服务</a></li>|
+				<li><a href="">银行汇款帐号</a></li>|
+				<li><a href="">联系方式</a></li>|
+				<li><a href="">版权声明</a></li>|
+				<li><a href="">法律顾问</a></li>|
+				<li><a href="">问题报告</a></li>|
+				<li><a href="">合作伙伴</a></li>|
+				<li><a href="">论坛反馈</a></li>|
+			</ul>
+		</div>
+		<div id="copyright">
+			<ul>
+				<li><a href=""><span id="kefu"></span>网站客服</a></li>
+				<li><a href=""><span id="zzkefu"></span>杂志客服</a></li>
+				<li><a href=""><span id="wbkefu"></span>微博客服</a></li>
+				<li><a href=""><span id="xinkefu"></span>webmaster@csdn.net</a></li>
+				<li><a href="">400-600-2320</a></li>
+				<li><a href="">北京创新乐知信息技术有限公司</a></li>
+				<li><a href="">版权所有</a></li>			
+				<li><a href="">江苏乐知网络技术有限公司 提供商务支持</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
